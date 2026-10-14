@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event-Driven Order System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Event-Driven Order System</h1>
+
+        <p class="subtitle">
+            PL4107 - System Integration and Architecture 2
+        </p>
+
+        <form id="orderForm">
+
+            <label for="customerName">
+                Customer Name
+            </label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter customer name"
+                required
+            >
+
+            <label for="product">
+                Product
+            </label>
+
+            <input
+                type="text"
+                id="product"
+                placeholder="Enter product"
+                required
+            >
+
+            <label for="quantity">
+                Quantity
+            </label>
+
+            <input
+                type="number"
+                id="quantity"
+                min="1"
+                value="1"
+                required
+            >
+
+            <button type="submit">
+                PLACE ORDER
+            </button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
